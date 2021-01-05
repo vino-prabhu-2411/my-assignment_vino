@@ -1,0 +1,56 @@
+<form>
+  <div class="form-group">
+    <div class="col-md-12 mb-3">
+      <span class="left-title">
+        Monthly Income
+      </span>
+      <span class="d-block slider-value">
+        {{incomeAmount | currency:'INR':'symbol':'3.0'}}
+      </span>
+      <div class="">
+        <mat-slider min="100000" max="300000" step="1000" (input)="pitch($event)"></mat-slider>
+        <div class="clear-both">
+          <span class="col-6 p-0 float-left d-block income-values">100000</span>
+          <span class="col-6 p-0 float-left d-block text-right income-values">300000</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mb-3 pt-3">
+      <span class="left-title">
+        Monthly Expense
+      </span>
+      <span class="d-block slider-value">
+        {{expenseAmount | currency:'INR':'symbol':'3.0'}}
+      </span>
+      <div class="">
+        <mat-slider min="15000" max="{{incomeAmount}}" (input)="expenseChange($event)"></mat-slider>
+        <div class="clear-both">
+          <span class="col-6 p-0 float-left d-block income-values">1000</span>
+          <span class="col-6 p-0 float-left d-block text-right income-values">{{incomeAmount}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mb-3 pt-3">
+      <mat-form-field>
+        <mat-label>Repayment Tenure: </mat-label>
+        <mat-select [(value)]="selectedTenure" (selectionChange)="onValueChange($event)">
+          <mat-option *ngFor="let suit of tenure" [value]="suit.value">
+            {{ suit.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-12 mb-3">
+      <label class="d-block repayment-label float-left mr-2 col-8 p-0">Do u have existing loan</label>
+      <div class="d-block  float-left col-2">
+        <mat-slide-toggle></mat-slide-toggle>
+      </div>
+    </div>
+    <div class="col-md-12 mb-3">
+      <mat-form-field class="example-full-width">
+        <mat-label>Emi of Exixting loan (optional)</mat-label>
+        <input matInput placeholder="" [(ngModel)]="otherEmi" name="otherEmi" ngModel>
+      </mat-form-field>
+    </div>
+  </div>
+</form>

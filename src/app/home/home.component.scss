@@ -1,0 +1,74 @@
+.blob-container {
+position: relative;
+}
+
+.blob-image {
+    position: absolute;
+    left: -182px;
+    width: 94%;
+}
+
+.header-text {
+    position: absolute;
+    margin-left: 21%;
+    font-size: 40px;
+    margin-top: 15%;
+    font-size: 23px;
+}
+
+.collect-video {
+    margin-top: 52%;
+    margin-left: 15%;
+    width: 71%;
+}
+
+.eligibility-block  {
+    position: relative;
+}
+
+.simple-bar {
+    position: absolute;
+    top: 35%;
+    left: 28% 
+}
+
+.calculated-block {
+    background: #9F62C9 ;
+    padding: 0px;
+    border-radius: 0px 16px 16px 0px;
+    color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.calculator-header {
+    padding: 2%;
+    text-align: center;
+    background: #FCFCFF;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.tenure-select {
+    width: 100%;
+    border: none;
+}
+
+.repayment-label {
+    font-size: 12px;
+}
+
+.accounting-dots-left {
+    bottom: 11px;
+    right: -44%;
+}
+
+.accounting-dots-right {
+    position: absolute;
+    left: 187px;
+    top: 430px;
+}
+
+.accounting-dots-left-img {
+  width: 100%;  
+}
+

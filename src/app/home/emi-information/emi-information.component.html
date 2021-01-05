@@ -1,0 +1,13 @@
+<div class="loan-block text-center">
+  <p class="mb-0">Loan Amount</p>
+  <p>
+    {{loanAmount | currency:'INR':'symbol':'1.0'}}
+  </p>
+</div>
+<div class="emi-calculated-block text-center">
+  <p class="mb-0">Your EMI Will be</p>
+  <p>
+    {{emiAmount | currency:'INR':'symbol':'1.0'}}
+  </p>
+</div>
+<button class="getMoney-btn">Get Money</button>

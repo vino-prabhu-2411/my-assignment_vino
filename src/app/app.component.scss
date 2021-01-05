@@ -1,0 +1,52 @@
+.app {
+    background: #FCFCFF;
+}
+
+.login-btn {
+    border: 2px solid #663399;
+    border-radius: 24px;
+    width: 118px;
+    background: none;
+    color: #663399 !important;
+    font-size: 16px;
+}
+
+.get-started-btn {
+    background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    color: #ffffff !important;
+    font-size: 17px !important;
+    width: 118px;
+    text-align: center;
+}
+
+.items {
+    text-align: left;
+    opacity: 1;
+    padding-right: 10px;
+    a {
+        letter-spacing: 0px;
+        color: #222222;
+        font-size: 17px;
+    }
+}
+
+.items:last-child {
+    padding-right: 0px;
+}
+
+
+.logo {
+    padding-left: 8%;
+    padding-bottom: 8%;
+}
+
+.nav-circle {
+    position: absolute;
+    left: -17%;
+    top: -94%;
+}
+.circle {
+    width: 100% !important;
+}
