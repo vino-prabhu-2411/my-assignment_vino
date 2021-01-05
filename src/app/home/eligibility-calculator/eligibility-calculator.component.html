@@ -33,7 +33,7 @@
     <div class="col-md-12 mb-3 pt-3">
       <mat-form-field>
         <mat-label>Repayment Tenure: </mat-label>
-        <mat-select [(value)]="selectedTenure" (selectionChange)="onValueChange($event)">
+        <mat-select [(value)]="selectedTenure" (selectionChange)="onValueChange()">
           <mat-option *ngFor="let suit of tenure" [value]="suit.value">
             {{ suit.viewValue }}
           </mat-option>
